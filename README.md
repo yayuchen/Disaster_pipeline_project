@@ -2,12 +2,12 @@
 ![**Web app homepage**]()
 
 ## Content:
-[**Installation**](#Installation)
-[**Motivation**](#Motivation)
-[**ETL pipeline notebook**](# ETL pipeline notebook)
-[**ML pipeline noteboo**](#ML pipeline notebook)
-[**Web application**](#Web application)
-[**License**](#License)
+1. [**Installation**](#Installation)
+2. [**Motivation**](#Motivation)
+3. [**ETL pipeline notebook**](# ETL pipeline notebook)
+4. [**ML pipeline notebook**](#ML pipeline notebook)
+5. [**Web application**](#Web application)
+6. [**License**](#License)
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### Installation:
