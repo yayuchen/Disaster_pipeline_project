@@ -7,7 +7,8 @@
 3. [**ETL pipeline notebook**](# ETL pipeline notebook)
 4. [**ML pipeline notebook**](#ML pipeline notebook)
 5. [**Web application**](#Web application)
-6. [**License**](#License)
+6. [**Operation**](#Operation)
+7. [**License**](#License)
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### Installation:
@@ -44,5 +45,17 @@ In order to understand and utilize NLP(Natural Language Pipeline) process, also 
 5. Typing any text and summit.
 6. At go page will show **result** and highlight **labels**.
 
+### Operation:
+1. Git clone repo:
+    **git clone **
+2. Using Anaconda Prompt and change directory to Python scripts repo:
+    **cd folder_repo**
+3. Executing ETL pipeline and ML pipeline, inputing Python scripts, file name and file path into command:
+    Ex: **python train_classifier.py Disaster_database.db disaster.pkl**
+    ![python]()
+4. Execution web application:
+    **python run.py**
+    ![web_app]()
+    
 ### License:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
