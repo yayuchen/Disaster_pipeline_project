@@ -24,7 +24,7 @@
 ### Motivation:
 In order to understand and utilize **NLP(Natural Language Pipeline)** process, also for better understanding of data engineering skills, this project is part of Data Science Nanodegree Program by Udacity in collaboration with **Figure Eight**. 
 
-### ETL pipeline notebook:
+### [ETL pipeline notebook](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/ETL%20pipeline.ipynb#1):
 1. **Extracting** data from origianl dataset.
 2. **Transforming** categories into new features.
 
@@ -35,15 +35,15 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
    ![after](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/after_trans.png)
    
 3. **Loading** cleaning dataset into database for machine learing. 
-4. Refactoring the process which used in notebook and build a [**ETL pipeline python script**](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/ETL%20pipeline.ipynb#1) for future using.
+4. Refactoring the process which used in notebook and build a [**ETL pipeline python script**](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/data/process_data.py) for future using.
 
-### ML pipeline notebook:
+### [ML pipeline notebook](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/ML_pipeline.ipynb#1):
 1. Loading data for database.
 2. Build a function for text **normalization, tokenization, remove stop words and lemmatization**.
 3. Using for loop and **pipeline** to find the best performance classifier.
 4. Using **GridSearchCV** to tune hyper parameters for better performance.
 5. Saving model.
-6. Refactoring the process which used in notebook and build a [**ML pipeline python script**](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/ML_pipeline.ipynb#1) for future using. 
+6. Refactoring the process which used in notebook and build a [**ML pipeline python script**](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/models/train_classifier.py) for future using. 
 
 ### Web application:
 1. Opening [**run.py**](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/app/run.py) file.
