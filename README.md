@@ -4,9 +4,9 @@
 ## Content:
 1. [**Installation**](#Installation)
 2. [**Motivation**](#Motivation)
-3. [**ETL pipeline notebook**](# ETL pipeline notebook)
-4. [**ML pipeline notebook**](#ML pipeline notebook)
-5. [**Web application**](#Web application)
+3. [**ETL pipeline notebook**](#ETL-pipeline-notebook)
+4. [**ML pipeline notebook**](#ML-pipeline-notebook)
+5. [**Web application**](#Web-application)
 6. [**Operation**](#Operation)
 7. [**License**](#License)
 
@@ -27,7 +27,7 @@ In order to understand and utilize NLP(Natural Language Pipeline) process, also 
 1. **Extracting** data from origianl dataset.
 2. **Transforming** categories into new features.
 3. **Loading** cleaning dataset into database for machine learing. 
-4. Refactoring the process which used in notebook and build a [**ETL pipeline python script**] for future using.() 
+4. Refactoring the process which used in notebook and build a [**ETL pipeline python script**](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/data/ETL%20pipeline.ipynb) for future using.
 
 ### ML pipeline notebook:
 1. Loading data for database.
@@ -35,10 +35,10 @@ In order to understand and utilize NLP(Natural Language Pipeline) process, also 
 3. Using for loop and **pipeline** to find the best performance classifier.
 4. Using **GridSearchCV** to tune hyper parameters for better performance.
 5. Saving model.
-6. Refactoring the process which used in notebook and build a [**ML pipeline python script**] for future using.() 
+6. Refactoring the process which used in notebook and build a [**ML pipeline python script**](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/models/ML_pipeline.ipynb) for future using. 
 
 ### Web application:
-1. Opening [**run.py**] file.()
+1. Opening [**run.py**]() file.
 2. Loading data and model
 3. Setting graph variables and define x, y for each figure.
 4. Execute web app, using **python run.py**.
