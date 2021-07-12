@@ -7,8 +7,9 @@
 3. [**ETL pipeline notebook**](#ETL-pipeline-notebook)
 4. [**ML pipeline notebook**](#ML-pipeline-notebook)
 5. [**Web application**](#Web-application)
-6. [**Operation**](#Operation)
-7. [**License**](#License)
+6. [**Imbalanced data**](#Imbalanced-data)
+7. [**Operation**](#Operation)
+8. [**License**](#License)
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### Installation:
@@ -58,6 +59,9 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
    **Classification labels**
    ![result](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/result.png)
    ![labels](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/labels.png)
+   
+### Imbalanced data:
+
 
 ### Operation:
 1. Git clone repo:
