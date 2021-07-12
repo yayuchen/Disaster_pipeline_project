@@ -12,13 +12,13 @@
 
 ----------------------------------------------------------------------------------------------------------------------------
 ### Installation:
-**Python** - There should be no necessary libraries to run the code here beyond the **Anaconda distribution of Python**. 
-**NLTK** - Natural Language Toolkit, using for natural language texts processing.
-**SQL database** - Either **SQLite or SQLAlchemy** for database storage source.
-**Scikit-learn** - Machine learning Algorithm libraries.
-**Flask** - Back-end API of Python for building up web application.
-**Plotly** - Plotting library.
-**Boostrap** - Front-end frame work for build up web application.
+* **Python** - There should be no necessary libraries to run the code here beyond the **Anaconda distribution of Python**. 
+* **NLTK** - Natural Language Toolkit, using for natural language texts processing.
+* **SQL database** - Either **SQLite or SQLAlchemy** for database storage source.
+* **Scikit-learn** - Machine learning Algorithm libraries.
+* **Flask** - Back-end API of Python for building up web application.
+* **Plotly** - Plotting library.
+* **Boostrap** - Front-end frame work for build up web application.
 
 ### Motivation:
 In order to understand and utilize **NLP(Natural Language Pipeline)** process, also for better understanding of data engineering skills, this project is part of Data Science Nanodegree Program by Udacity in collaboration with **Figure Eight**. 
@@ -48,21 +48,30 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 4. Execute web app, using **python run.py**.
 5. Typing any text and summit.
 6. At go page will show **result** and highlight **labels**.
+
    **Classification result**
    ![text](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/weather.png)
+   
    **Classification labels**
    ![result](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/result.png)
    ![labels](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/labels.png)
 
 ### Operation:
 1. Git clone repo:
-    **git clone https://github.com/yayuchen/Disaster_pipeline_project.git**
+
+    git clone https://github.com/yayuchen/Disaster_pipeline_project.git
+    
 2. Using Anaconda Prompt and change directory to Python scripts repo:
+
     **cd <folder_repo>**
+    
 3. Executing ETL pipeline and ML pipeline, inputing Python scripts, file name and file path into command:
+
     Ex: **python train_classifier.py Disaster_database.db disaster.pkl**
     ![pipeline](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/operation.png)
+    
 4. Execution web application:
+
     **python run.py**
     ![web](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/run_app.png)
     
