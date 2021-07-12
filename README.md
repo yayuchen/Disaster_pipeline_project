@@ -26,10 +26,13 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 ### ETL pipeline notebook:
 1. **Extracting** data from origianl dataset.
 2. **Transforming** categories into new features.
+
    **Before transformed values**
    ![before transform](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/before_trans.png)
+   
    **After transformed values**
    ![after](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/after_trans.png)
+   
 3. **Loading** cleaning dataset into database for machine learing. 
 4. Refactoring the process which used in notebook and build a [**ETL pipeline python script**](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/ETL%20pipeline.ipynb#1) for future using.
 
@@ -47,7 +50,7 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 3. Setting graph variables and define x, y for each figure.
 4. Execute web app, using **python run.py**.
 5. Typing any text and summit.
-6. At go page will show **result** and highlight **labels**.
+6. At go page will return **result** also highlight **labels**.
 
    **Classification result**
    ![text](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/weather.png)
@@ -67,7 +70,7 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
     
 3. Executing ETL pipeline and ML pipeline, inputing Python scripts, file name and file path into command:
 
-    Ex: **python train_classifier.py Disaster_database.db disaster.pkl**
+    **python train_classifier.py Disaster_database.db disaster.pkl**
     ![pipeline](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/operation.png)
     
 4. Execution web application:
