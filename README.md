@@ -82,5 +82,9 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
     **python run.py**
     ![web](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/run_app.png)
     
+5. Check web application at local device:
+
+    type **localhost:5000/** to find web application 
+    
 ### License:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
