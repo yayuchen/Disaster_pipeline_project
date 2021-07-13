@@ -9,7 +9,8 @@
 5. [**Web application**](#Web-application)
 6. [**Operation**](#Operation)
 7. [**Discussion-imbalanced dataset**](#Discussion-imbalanced-dataset)
-8. [**License**](#License)
+8. [**Reference**](#Reference)
+9. [**License**](#License)
 
 ----------------------------------------------------------------------------------------------------------------------------
 ## Installation:
@@ -21,10 +22,11 @@
 * **Plotly** - Plotting library.
 * **Boostrap** - Front-end frame work for build up web application.
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ## Motivation:
 In order to understand and utilize **NLP(Natural Language Pipeline)** process, also for better understanding of data engineering skills, this project is part of Data Science Nanodegree Program by Udacity in collaboration with **Figure Eight**. 
 
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ## [ETL pipeline notebook](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/ETL%20pipeline.ipynb#1):
 
 
@@ -32,11 +34,11 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 * **Transforming** categories into new features.
 >
 >
-   **Before transformed values**
+   Before transformed values
    ![before transform](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/before_trans.png)
 >   
 >   
-   **After transformed values**
+   After transformed values
    ![after](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/after_trans.png)
 >   
 >   
@@ -46,7 +48,7 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 
 
 
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ## [ML pipeline notebook](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/ML_pipeline.ipynb#1):
 >
 >
@@ -60,7 +62,7 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 
 
 
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ## Web application:
 >
 >
@@ -73,19 +75,19 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 
 
 
-   **Classification result**
+   Classification result
    ![text](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/weather.png)
 
 
 
-   **Classification labels**
+   Classification labels
    ![result](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/result.png)
    ![labels](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/labels.png)
 >   
 
 
 
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ## Operation:
 * Git clone repo:
 >
@@ -98,14 +100,14 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 * Executing ETL pipeline and ML pipeline, inputing Python scripts, file name and file path into command:
 
 
-    **python train_classifier.py Disaster_database.db disaster.pkl**
+    python train_classifier.py Disaster_database.db disaster.pkl
     ![pipeline](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/operation.png)
 >
 >
 * Execution web application:
 
 
-    **python run.py**
+    python run.py
     ![web](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/run_app.png)
 >  
 >  
@@ -116,51 +118,52 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 
 
 
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ## Discussion-[imbalanced dataset](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/Imbalances_dataset.ipynb)
 >
 >
-   **Bar plot of categories values** 
+   Bar plot of categories values 
    ![bar plot](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/bar_plot.png)
 >   
 > 
 * **Conclusion**: As above, all of labels in this case are imbalanced, it also showed the metric result at classification report and confusion matrix.
 >
 >
-   **Classification report and confusion matrix**
   ![metric report](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/class_metrics.png)
 >  
 >
-* **Impact**: As most of the machine learning algorithms are developed with the assumption of the class is balanced, this case could lead to a poor predictive performance for minority classes.
+* **Impact**: As most of the machine learning algorithms are developed with the assumption of the class is balanced, this case could lead to a **poor predictive performance for minority classes**.
 >
 >
-* **Way to deal**: Resampling the train data: there are 2 differnt way of resampling, **under sampling** and **over sampling**.
+* **Way to deal**: Resampling the training data, there are 2 differnt ways of resampling, **under sampling** and **over sampling**.
 >
 >   
-1. Under sampling: resampling by reducing the number of majority classes to achieve our goal, it could cause a issue which might loss the potential            information from majority classes.
+1. **Under sampling**: Resampling by reducing the number of majority classes to achieve our goal, it could cause a issue which might loss the potential            information from majority classes.
 >      
-2. Over sampling: the opposite way to under resampling by increasing the number of minority classes to balance training data, there is a technique              called **SMOTE(Synthetic Minority Over-Sampling Technique)** to help to deal with this kind of issue.
+2. **Over sampling**: The opposite way to under resampling by increasing the number of minority classes to balance training data, there is a technique              called **SMOTE(Synthetic Minority Over-Sampling Technique)** to help to deal with this kind of issue.
 
 
 
 
 >        
-* **Reference**: 
+## Reference: 
 >
 >
->> For imbalanced training data:
-        * https://imbalanced-learn.org/stable/introduction.html
-        * https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
-        * https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+#### For imbalanced training data:
+
+* https://imbalanced-learn.org/stable/introduction.html
+* https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
+* https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
 >       
 >        
->> For imbalanced multilabel classification:
-        * https://medium.com/thecyphy/handling-data-imbalance-in-multi-label-classification-mlsmote-531155416b87
-        * https://github.com/niteshsukhwani/MLSMOTE/blob/master/mlsmote.py
+#### For imbalanced multilabel classification:
+
+* https://medium.com/thecyphy/handling-data-imbalance-in-multi-label-classification-mlsmote-531155416b87
+* https://github.com/niteshsukhwani/MLSMOTE/blob/master/mlsmote.py
 >
 
 
 
-
-### License:
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+## License:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
