@@ -7,8 +7,8 @@
 3. [**ETL pipeline notebook**](#ETL-pipeline-notebook)
 4. [**ML pipeline notebook**](#ML-pipeline-notebook)
 5. [**Web application**](#Web-application)
-6. [**Imbalanced data**](#Imbalanced-data)
-7. [**Operation**](#Operation)
+6. [**Operation**](#Operation)
+7. [**Discussion - imbalanced dataset**](#Discussion-imbalanced-dataset)
 8. [**License**](#License)
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 2. Build a function for text **normalization, tokenization, remove stop words and lemmatization**.
 3. Using for loop and **pipeline** to find the best performance classifier.
 4. Using **GridSearchCV** to tune hyper parameters for better performance.
-5. Saving model.
+5. Saving model also output classification report.  
 6. Refactoring the process which used in notebook and build a [**ML pipeline python script**](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/models/train_classifier.py) for future using. 
 
 ### Web application:
@@ -60,9 +60,6 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
    ![result](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/result.png)
    ![labels](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/labels.png)
    
-### Imbalanced data:
-
-
 ### Operation:
 1. Git clone repo:
 
@@ -85,6 +82,35 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 5. Check web application at local device:
 
     type **localhost:5000/** to find web application 
-    
+
+### Discussion - [imbalanced dataset](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/Imbalances_dataset.ipynb)
+
+   **Bar plot of categories values** 
+   ![bar plot](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/bar_plot.png)
+ 
+i. **Conclusion**: As above, all of labels in this case are imbalanced, it also showed the metric result at classification report and confusion matrix.
+
+   **Classification report and confusion matrix**
+  ![metric report](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/class_metrics.png)
+
+ii. **Impact**: As most of the machine learning algorithms are developed with the assumption of the class is balanced, this case could lead to a poor predictive performance for minority classes.
+
+iii. **Way to deal**: 
+
+        Resampling the train data: there are 2 differnt way of resampling, **under sampling** and **over sampling**.
+        1. Under sampling: resampling by reducing the number of majority classes to achieve our goal, it could cause a issue which might loss the potential            information from majority classes.
+        2. Over sampling: the opposite way to under resampling by increasing the number of minority classes to balance training data, there is a technique              called **SMOTE(Synthetic Minority Over-Sampling Technique)** to help to deal with this kind of issue.
+        
+iiii. **Reference**: 
+
+        **For imbalanced training data**
+        https://imbalanced-learn.org/stable/introduction.html
+        https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
+        https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+        
+        **For imbalanced multilabel classification**
+        https://medium.com/thecyphy/handling-data-imbalance-in-multi-label-classification-mlsmote-531155416b87
+        https://github.com/niteshsukhwani/MLSMOTE/blob/master/mlsmote.py
+
 ### License:
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
