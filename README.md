@@ -8,7 +8,7 @@
 4. [**ML pipeline notebook**](#ML-pipeline-notebook)
 5. [**Web application**](#Web-application)
 6. [**Operation**](#Operation)
-7. [**Discussion - imbalanced dataset**](#Discussion-imbalanced-dataset)
+7. [**Discussion-imbalanced dataset**](#Discussion-imbalanced-dataset)
 8. [**License**](#License)
 
 ----------------------------------------------------------------------------------------------------------------------------
@@ -63,11 +63,11 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 ### Operation:
 1. Git clone repo:
 
-    git clone https://github.com/yayuchen/Disaster_pipeline_project.git
+      git clone    https://github.com/yayuchen/Disaster_pipeline_project.git
     
 2. Using Anaconda Prompt and change directory to Python scripts repo:
 
-    **cd <folder_repo>**
+       cd <folder_repo>
     
 3. Executing ETL pipeline and ML pipeline, inputing Python scripts, file name and file path into command:
 
@@ -81,9 +81,9 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
     
 5. Check web application at local device:
 
-    type **localhost:5000/** to find web application 
+        localhost:5000/
 
-### Discussion - [imbalanced dataset](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/Imbalances_dataset.ipynb)
+### Discussion-[imbalanced dataset](https://nbviewer.jupyter.org/github/yayuchen/Disaster_pipeline_project/blob/main/raw_files/Imbalances_dataset.ipynb)
 
    **Bar plot of categories values** 
    ![bar plot](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/bar_plot.png)
@@ -97,18 +97,18 @@ ii. **Impact**: As most of the machine learning algorithms are developed with th
 
 iii. **Way to deal**: 
 
-        Resampling the train data: there are 2 differnt way of resampling, **under sampling** and **over sampling**.
+   Resampling the train data: there are 2 differnt way of resampling, **under sampling** and **over sampling**.
         1. Under sampling: resampling by reducing the number of majority classes to achieve our goal, it could cause a issue which might loss the potential            information from majority classes.
         2. Over sampling: the opposite way to under resampling by increasing the number of minority classes to balance training data, there is a technique              called **SMOTE(Synthetic Minority Over-Sampling Technique)** to help to deal with this kind of issue.
         
 iiii. **Reference**: 
 
-        **For imbalanced training data**
+   **For imbalanced training data**
         https://imbalanced-learn.org/stable/introduction.html
         https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
         https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
         
-        **For imbalanced multilabel classification**
+   **For imbalanced multilabel classification**
         https://medium.com/thecyphy/handling-data-imbalance-in-multi-label-classification-mlsmote-531155416b87
         https://github.com/niteshsukhwani/MLSMOTE/blob/master/mlsmote.py
 
