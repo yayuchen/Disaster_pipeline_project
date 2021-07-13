@@ -137,9 +137,9 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 * **Way to deal**: Resampling the train data: there are 2 differnt way of resampling, **under sampling** and **over sampling**.
 >
 >   
-      * Under sampling: resampling by reducing the number of majority classes to achieve our goal, it could cause a issue which might loss the potential            information from majority classes.
+1. Under sampling: resampling by reducing the number of majority classes to achieve our goal, it could cause a issue which might loss the potential            information from majority classes.
 >      
-      * Over sampling: the opposite way to under resampling by increasing the number of minority classes to balance training data, there is a technique              called **SMOTE(Synthetic Minority Over-Sampling Technique)** to help to deal with this kind of issue.
+2. Over sampling: the opposite way to under resampling by increasing the number of minority classes to balance training data, there is a technique              called **SMOTE(Synthetic Minority Over-Sampling Technique)** to help to deal with this kind of issue.
 
 
 
@@ -149,14 +149,14 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 >
 >
 >> For imbalanced training data:
-        https://imbalanced-learn.org/stable/introduction.html
-        https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
-        https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+        * https://imbalanced-learn.org/stable/introduction.html
+        * https://www.kdnuggets.com/2017/06/7-techniques-handle-imbalanced-data.html
+        * https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
 >       
 >        
 >> For imbalanced multilabel classification:
-        https://medium.com/thecyphy/handling-data-imbalance-in-multi-label-classification-mlsmote-531155416b87
-        https://github.com/niteshsukhwani/MLSMOTE/blob/master/mlsmote.py
+        * https://medium.com/thecyphy/handling-data-imbalance-in-multi-label-classification-mlsmote-531155416b87
+        * https://github.com/niteshsukhwani/MLSMOTE/blob/master/mlsmote.py
 >
 
 
