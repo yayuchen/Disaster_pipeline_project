@@ -49,8 +49,9 @@ def clean_data(df):
     # remove olf categories column
     new_df = pd.concat([df, cat_df], axis=1)
     new_df = new_df.drop('categories', axis=1).drop_duplicates()
+    binary_df = new_df[new_df['related']!='2']
     
-    return new_df
+    return binary_df
 
 def save_data(df, database_filepath):
     """
