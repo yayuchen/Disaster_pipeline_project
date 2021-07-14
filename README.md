@@ -90,20 +90,34 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ## Operation:
 * Git clone repo:
->
+
       git clone https://github.com/yayuchen/Disaster_pipeline_project.git
 >    
-* Using Anaconda Prompt and change directory to Python scripts repo:
+* Using Anaconda Prompt and change directory to data/model/app folder:
 
-       cd <folder_repo>
->    
-* Executing ETL pipeline and ML pipeline, inputing Python scripts, file name and file path into command:
+      cd <folder_repo>
+>   ![cd data](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/cd_data.png)   
 
+
+* Executing **ETL pipeline**, inputing Python scripts, input datasets filepath and database filepath into command:
+
+
+    python process_data.py disaster_messages.csv disaster_categories.csv Disaster_database.db
+    ![execute data](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/execute_data.png)
+     
+    successful saved data from pipeline: **creating a new database file in data folder and saved data**
+    ![save data](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/add_db.png)
+    
+    
+* Execution **ML pipeline**, inputing Python scripts, database filepath and pickle filepath into command:
 
     python train_classifier.py Disaster_database.db disaster.pkl
-    ![pipeline](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/operation.png)
->
->
+    ![pipeline](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/operation.png) 
+    
+    successful trained data from pipeline: **creating a new pickle file in model folder also shown classification report in command**
+    ![train model](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/save_model.png)
+
+
 * Execution web application:
 
 
@@ -113,7 +127,7 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 >  
 * Check web application at local server:
 
-       localhost:5000/
+      localhost:5000/
 >
 
 
