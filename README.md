@@ -56,6 +56,13 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
 * Build a function for text **normalization, tokenization, remove stop words and lemmatization**.
 * Using for loop and **pipeline** to find the best performance classifier.
 * Using **GridSearchCV** to tune hyper parameters for better performance.
+
+    
+    find out pipeline's hyper-parameters, then use GridSearchCV to tune for better classifier performance
+    ![modify](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/modify_hyper.png)
+    ![tune](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/tune_by_grid.png)
+    
+    
 * Saving model also output classification report.  
 * Refactoring the process which used in notebook and build a [**ML pipeline python script**](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/models/train_classifier.py) for future using. 
 >
