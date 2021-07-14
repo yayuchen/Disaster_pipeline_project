@@ -60,6 +60,7 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
     
     find out pipeline's hyper-parameters, then use GridSearchCV to tune for better classifier performance
     ![modify](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/modify_hyper.png)
+>    
     ![tune](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/tune_by_grid.png)
     
     
