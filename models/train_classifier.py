@@ -77,18 +77,24 @@ def tokenize(text):
 
 def build_model():
     """
-    Using pipeline to automatically execute estimators step by step
+    Using pipeline to automatically execute estimators step by step and applying GridSearchCV to find the best   
+    hyper parameters for pipeline model
     
     Return:
-        pipeline - contains different estimators with modified hyper parameters
+        cv - automatically to find out the best performance hyper parameter 
     """
     pipeline = Pipeline([
     ('vect', CountVectorizer(tokenizer=tokenize)),
-    ('tfidf', TfidfTransformer(smooth_idf=False)),
-    ('clf', MultiOutputClassifier(RandomForestClassifier(random_state=42, 
-                                                         n_estimators=200)))])
+    ('tfidf', TfidfTransformer()),
+    ('clf', MultiOutputClassifier(RandomForestClassifier(random_state=42)))])
     
-    return pipeline 
+    parameters = {'vect__max_features': [None, 5, 10],
+              'clf__estimator__n_estimators': [100, 200],
+              'clf__estimator__max_samples': [None, 10, 20]}
+    
+    cv = GridSearchCV(pipeline, parameters)
+    
+    return cv 
 
 
 def evaluate_model(model, X_test, Y_test, category_names):
@@ -166,6 +172,7 @@ def main():
         
         print('Training model...')
         model.fit(X_train, Y_train)
+        print('The best performance parameters:\n', model.best_params_)
         
         print('Evaluating model...')
         evaluate_model(model, X_test, Y_test, category_names)
@@ -174,6 +181,7 @@ def main():
         save_model(model, model_filepath)
 
         print('Trained model saved!')
+        
 
     else:
         print('Please provide the filepath of the disaster messages database '\
