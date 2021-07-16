@@ -123,8 +123,8 @@ In order to understand and utilize **NLP(Natural Language Pipeline)** process, a
     python train_classifier.py Disaster_database.db disaster.pkl
     ![pipeline](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/operation.png) 
     
-    successful trained data from pipeline: **creating a new pickle file in model folder also shown classification report in command**
-    ![train model](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/save_model.png)
+    successful trained data from pipeline which automatically use **GridSearchCV** to find the best performance: **creating a new pickle file in model folder also shown the best hyper parameters and classification report in command**
+    ![save cv model](https://github.com/yayuchen/Disaster_pipeline_project/blob/main/images/save_best_params.png)
 
 
 * Execution web application:
