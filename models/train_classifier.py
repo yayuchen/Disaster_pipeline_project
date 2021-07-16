@@ -154,7 +154,7 @@ def main():
     procedures:
         1. Load data from database
         2. split independent and target variables
-        3. set model variable and train data
+        3. set model variable and train data also use GridSearchCV to find the best hyper parameters
         4. output classification report 
         5. save the best performance model as a new pickle file
         
